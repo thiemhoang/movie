@@ -57,6 +57,10 @@
     padding-left: 0px;
     border-bottom: solid 1px #B7B7B7;
     padding-bottom: 0px;
+    .nav-container {
+        display: flex;
+        width: 100%;
+    }
     button {
         width: 25px;
         height: 25px;
@@ -102,6 +106,11 @@
     img {
         max-height: 400px;
         width: 100%;
+    }
+
+    &.row {
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     .grid-card {
