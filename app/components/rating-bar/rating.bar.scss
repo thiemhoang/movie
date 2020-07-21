@@ -1,0 +1,25 @@
+.ratings-star {
+  .icon {
+    background-size: contain !important;
+    width: 30px;
+    height: 30px;
+    display:inline-block;
+    vertical-align: middle;
+    margin-right: 3px;
+    &.filled {
+      background: url('../../assets/star.png') no-repeat;
+    }
+    &.no-filled {
+      background: url('../../assets/star-less.png') no-repeat;
+    }
+    &.half-filled {
+      background: url('../../assets/start-half.png') no-repeat;
+    }
+  }
+  .rating-score {
+    border: solid 1px #9c9a9a;
+    border-radius: 2px;
+    padding: 1px 2px 1px 2px;
+    margin-left: 3px;
+  }
+}

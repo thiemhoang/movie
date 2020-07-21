@@ -1,0 +1,52 @@
+<carousel slides ="homeCtr.bannerData"> </carousel>
+
+<div class="movie-body">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item" ng-class="{'active': homeCtr.activeTab === 1}">
+              <a class="nav-link" ng-click="homeCtr.changeTab('popular');" href="#">Popular</a>
+            </li>
+            <li class="nav-item" ng-class="{'active': homeCtr.activeTab === 2}">
+              <a class="nav-link" ng-click="homeCtr.changeTab('top-rated');" href="#">Top Rated</a>
+            </li>
+            <li class="nav-item" ng-class="{'active': homeCtr.activeTab === 3}">
+                <a class="nav-link" ng-click="homeCtr.changeTab('upcomming');" href="#">Upcomming</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Gener
+              </a>
+              <div class="dropdown-menu">
+                <a ng-repeat="genre in homeCtr.genres" class="dropdown-item" href="#">{{genre.name}}</a>
+              </div>
+            </li>
+          </ul>
+          <div class="form-inline my-2 my-lg-0">
+            <button class="collection-button"></button>
+            <button class="list-button"></button>
+          </div>
+        </div>
+      </nav>
+      <div class="grid-view row">
+            <div ng-repeat="item in homeCtr.gridData" class="col-3 item">
+              <div class="grid-card ml-4 mr-4 mt-4 mb-4">
+                <div class="image-container">
+                    <img src="{{item.posterPath}}">
+                    <span class="publish-year">{{item.publishYear}}</span>
+                </div>
+                <div class="text-container">
+                    <label class="name">{{item.title}}</label>
+                    <label class="genre">{{item.genreNames}}</label>
+                    <span class="rate-score">{{item.voteAverage}}</span>
+                </div>
+                </div>
+            </div>
+    </div>
+    <div class="loading" ng-class="{'active': homeCtr.loading}">
+      <div class="content">
+        <span class="icon"></span>
+        <span class="text">LOADING</span>
+      </div>
+    </div>
+</div>

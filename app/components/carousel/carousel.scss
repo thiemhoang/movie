@@ -1,0 +1,128 @@
+
+@media screen and (max-width: 900px) {
+  .page-name{
+    display: none;   
+  }
+
+  .rating{
+    display: none;
+  }
+}
+
+.carousel-item {
+  img {
+    max-height: 700px;
+  }
+}
+
+.carousel-indicators {
+  margin-bottom: 0.5em;
+  li {
+    height: 10px;
+    width: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+    &.active {
+      background-color: #FF0079;
+    }
+  }
+}
+
+.carousel-info {
+  position: absolute;
+  color: white;
+  &.top {
+    top: 30px;
+  }
+
+  &.left {
+    left: 20px;
+  }
+
+  &.right {
+    right: 20px;
+  }
+
+  &.bottom {
+    bottom: 40px
+  }
+  &.page-name {
+    font-size: x-large;
+  }
+
+  .search {
+    background: url('../../assets/search-icon.png') no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    height: 25px;
+    padding-right: 15px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .login {
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+  .sign-up {
+    border: none;
+    outline: none;
+    background-color: #FF0079;
+    border-radius: 3px;
+  }
+  button {
+    color: white;
+    padding: 7px 20px 7px 20px;
+  }
+  ul {
+    padding-left: 0px;
+  }
+  ul,li {
+    display:inline;
+    color: #B7B7B7;
+  }
+  li {
+      padding-right: 10px;
+      &.duration {
+        border-left: solid #B7B7B7 2px;
+        padding-left: 10px;
+      }
+  }
+  .name {
+    font-size: xx-large;
+    font-weight: bolder;
+    text-transform: uppercase;
+  }
+  .watch-group {
+    margin-top: 10px;
+    button {
+      background-color: #FF0079;
+      border: none;
+      outline: none;
+      border-radius: 3px;
+      margin-right: 5px;
+      &:last-child {
+        background-color: transparent;
+      }
+      &.view {
+        background-color: transparent;
+        border: solid 2px white;
+      }
+    }
+  }
+  +.rating {
+    color: #B7B7B7;
+    font-size: small;
+    span {
+      color: white;
+      font-size: medium;
+      font-weight: 10;
+    }
+    label {
+      margin-bottom: 0px;
+    }
+  }
+}

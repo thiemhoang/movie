@@ -1,0 +1,5 @@
+<div class="ratings-star">
+  <span class="icon" ng-repeat="item in ratingCtr.range" ng-class="{'filled': ratingCtr.score - item > 1, 'half-filled': ratingCtr.score - item < 1 &&  ratingCtr.score - item > 0, 'no-filled' : ratingCtr.score - item < 0}">
+  </span>
+  <span class="rating-score">{{ratingCtr.score}}</span>
+</div>
